@@ -3,6 +3,7 @@ import '../styles/App.css';
 import { Wrapper } from '../context/userContext';
 import { Settings } from './Settings';
 import { Home } from './Home';
+import { createContext } from 'react';
 const App = () => {
 
   return (
