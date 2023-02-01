@@ -5,10 +5,11 @@ import { UserContext } from "../context/userContext"
 export const Settings = () => {
 
     // to be implemented in context
-    const { greeting, setGreeting } = useContext(UserContext)
+    const { state, dispatch } = useContext(UserContext)
 
     const handelInput = (event) => {
-        setGreeting(event.target.value);
+        //setGreeting(event.target.value);
+        dispatch({ type: "set_user", user: event.target.value })
     }
 
     return (
